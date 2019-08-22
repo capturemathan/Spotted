@@ -21,6 +21,7 @@ android {
 dependencies {
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
     implementation 'com.facebook.shimmer:shimmer:0.3.0'
+    implementation 'com.seatgeek:placesautocomplete:0.3-SNAPSHOT'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
