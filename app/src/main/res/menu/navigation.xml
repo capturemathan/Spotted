@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_project"
+        android:icon="@drawable/details"
+        android:title="Details" />
+
+    <item
+        android:id="@+id/navigation_resources"
+        android:icon="@drawable/nearby"
+        android:title="Nearby" />
+
+    <item
+        android:id="@+id/navigation_chatbot"
+        android:icon="@drawable/footprints"
+        android:title="Footprints" />
+</menu>
