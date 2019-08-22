@@ -12,17 +12,16 @@ public class DetailsActivity extends AppCompatActivity implements BottomNavigati
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_navigation);
 
         //loading the default fragment
-        //loadFragment(new HomeFragment());
+        loadFragment(new DetailsFragment());
 
         //getting bottom navigation view and attaching the listener
         BottomNavigationView navigation = findViewById(R.id.navigationView);
         navigation.setOnNavigationItemSelectedListener(this);
 
     }
-
 
     private boolean loadFragment(Fragment fragment) {
         //switching fragment
@@ -37,8 +36,23 @@ public class DetailsActivity extends AppCompatActivity implements BottomNavigati
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        return false;
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        Fragment fragment = null;
+        switch (item.getItemId()) {
+            case R.id.navigation_details:
+                fragment = new DetailsFragment();
+                break;
+
+            case R.id.navigation_nearby:
+                fragment = new NearbyFragment();
+                break;
+
+            case R.id.navigation_footprints:
+                fragment = new FootprintFragment();
+                break;
+
+        }
+        return loadFragment(fragment);
     }
 
 }
