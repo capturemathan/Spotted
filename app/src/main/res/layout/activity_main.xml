@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FCFF"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textspotted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/manroperegular"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="Spotted"
+        android:textColor="@color/primary_dark"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="18dp"
+        android:fontFamily="@font/merienda"
+        android:text="© Technosaurs"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textBlack"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/spottedimg"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/textspotted"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/spottedlogo" />
+
+    <Button
+        android:id="@+id/detailsbtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/spottedimg"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/primary"
+        android:fontFamily="@font/raleway"
+        android:text="Enter Missing Person Details"
+        android:textColor="@color/textWhite"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/spottedbtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/detailsbtn"
+        android:layout_margin="18dp"
+        android:background="@color/primary"
+        android:fontFamily="@font/raleway"
+        android:text="Spotted VICTIM ?"
+        android:textColor="@color/textWhite"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</android.widget.RelativeLayout>
