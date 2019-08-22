@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.facebook.shimmer.ShimmerFrameLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     Button b1, b2;
@@ -15,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ShimmerFrameLayout container = (ShimmerFrameLayout) findViewById(R.id.shimmer_view_container);
+        container.startShimmer();
         b1 = findViewById(R.id.detailsbtn);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override

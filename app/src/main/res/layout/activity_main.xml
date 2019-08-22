@@ -35,21 +35,30 @@
         android:textSize="18dp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/spottedimg"
-        android:layout_width="200dp"
-        android:layout_height="250dp"
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textspotted"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/spottedlogo" />
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/spottedimg"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/spottedlogo" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
 
     <Button
         android:id="@+id/detailsbtn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_below="@+id/spottedimg"
+        android:layout_below="@+id/shimmer_view_container"
         android:layout_marginLeft="18dp"
         android:layout_marginRight="18dp"
         android:background="@color/primary"
