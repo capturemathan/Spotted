@@ -1,12 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="18dp">
 
-    <TextView
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/details_name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hey"
-        android:textSize="20dp" />
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:hint="Name"
+        app:met_floatingLabel="highlight" />
 
-</android.support.constraint.ConstraintLayout>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/details_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_name"
+        android:layout_margin="18dp"
+        android:hint="Age"
+        android:inputType="number"
+        app:met_floatingLabel="highlight" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/details_identification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_age"
+        android:layout_margin="18dp"
+        android:hint="Any 1 IDENTIFICATION MARK"
+        app:met_floatingLabel="highlight" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/details_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_identification"
+        android:layout_margin="18dp"
+        android:hint="Phone Number"
+        app:met_floatingLabel="highlight" />
+
+    <Button
+        android:id="@+id/details_choosephotos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/details_phone"
+        android:layout_margin="18dp"
+        android:background="@color/primary"
+        android:text="CHOOSE PHOTOS"
+        android:textColor="@color/textWhite" />
+
+    <Button
+        android:id="@+id/details_uploadphotos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/details_choosephotos"
+        android:layout_margin="18dp"
+        android:background="@color/primary"
+        android:text="UPLOAD PHOTOS"
+        android:textColor="@color/textWhite" />
+
+
+</RelativeLayout>
