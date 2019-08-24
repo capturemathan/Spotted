@@ -5,19 +5,40 @@
     android:layout_height="match_parent">
 
     <com.rengwuxian.materialedittext.MaterialEditText
-        android:id="@+id/personname"
+        android:id="@+id/nearbyname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="18dp"
-        android:hint="Name of the MISSING" />
+        android:hint="Name of the MISSING"
+        app:met_floatingLabel="highlight"/>
 
     <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
-        android:id="@+id/places_autocomplete"
+        android:id="@+id/nearbyplaces_autocomplete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/personname"
+        android:layout_below="@+id/nearbyname"
         android:layout_margin="18dp"
         android:hint="Type the location"
         app:pacv_googleMapsApiKey="@string/maps_key" />
+
+    <Button
+        android:id="@+id/nearby_choosephotos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/nearbyplaces_autocomplete"
+        android:layout_margin="18dp"
+        android:background="@color/primary"
+        android:text="CHOOSE PHOTOS"
+        android:textColor="@color/textWhite" />
+
+    <Button
+        android:id="@+id/nearbybutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/nearby_choosephotos"
+        android:layout_margin="18dp"
+        android:background="@color/primary"
+        android:text="SUBMIT DETAILS"
+        android:textColor="@color/textWhite" />
 
 </RelativeLayout>
