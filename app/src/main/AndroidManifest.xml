@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetailsActivity"></activity>
+        <activity android:name=".SpottedActivity"></activity>
     </application>
 
 </manifest>
