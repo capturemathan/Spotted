@@ -4,6 +4,7 @@
 <img align="center" width="180" height="300" src="https://github.com/capturemathan/Spotted/blob/master/Screenshots/DetailsScreen.png">
 
 ## Objective
+> It’s no surprise that India has more number of child missing cases and no adequate methods to find them. Only about 50% of them are found : THE HINDU
 <li>An app that helps in finding missing people using facial recognition, digital footprints and crowdsourcing by storing details of missing people in a secure
 database accessible only by authorities.
 <li>The common people are provided with an app to report the same.
@@ -31,3 +32,14 @@ database accessible only by authorities.
 <li> When a child is spotted by public, he/she can take an upload the photo and location in our app.
 <li> The app compares the photo with the existing records in database collected from each local police station.
 <li> When the record is matched, the police station nearest to child’s location is informed.
+
+## Video Demo :movie_camera:
+https://www.youtube.com/watch?v=ytJntlCoIx4
+
+## Tech Stack :iphone:
+<ol>
+  <li> Python : OpenCV, Pickle, Dlib
+  <li> PHP
+  <li> MySQL
+  <li> Android
+</ol>
